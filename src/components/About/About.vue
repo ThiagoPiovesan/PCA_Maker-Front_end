@@ -33,28 +33,32 @@
             <v-flex>
               <div class="headline mt-3"># Steps to execute PCA:</div>
               <p class="steps">
-                1. Compute mean row. <br>
+              <b>  1. Compute mean row. </b><br>
               </p>
               <p class="steps">
-                2. Subtract mean from the main (original) data: B = x_matrix - x_matrix_hat: <br>
+              <b>  2. Subtract mean from the main (original) data: B = x_matrix - x_matrix_hat: </b><br>
                 → Subtract the mean of each variable from the dataset so that the dataset should be centered on the origin.  <br>
               </p>
               <p class="steps">              
-                3. Covariance matrix of the rows of B: <br>
+              <b>  3. Covariance matrix of the rows of B: </b><br>
                 → Calculate the Covariance Matrix of the mean-centered data. The covariance matrix is a square matrix denoting the covariance of the elements with each other. <br>
               </p>
               <p class="steps">
-                4. Compute Eigenvalues and Eigenvectors of C: <br>
+              <b>  4. Compute Eigenvalues and Eigenvectors of C: </b><br>
                 → The Eigenvectors of the Covariance matrix we get are Orthogonal to each other and each vector represents a principal axis. <br>
                 → A Higher Eigenvalue corresponds to a higher variability. Hence the principal axis with the higher Eigenvalue will be an axis capturing higher variability in the data. <br>
                 → Orthogonal means the vectors are mutually perpendicular to each other. Eigenvalues and vectors seem to be very scary until we get the idea and concepts behind it. <br>
               </p>
               <p class="steps">
-                5. Principal component: T = BV <br>
+              <b>  5. Principal component: T = BV </b><br>
+              </p>
+
+              <p class="steps">
+              <b>  + Essentially what you do is: </b><br>
+                → Decompose this matrix into kind of directions of maximal variance just like in the singular value decomposition, called the Principal component. And the Loadings are king of how much of each of those principal components each of the experiments has the loadings in a particular experiment of those principal components columns. <br>
               </p>
             <br><hr>       
             </v-flex>
-
         </v-layout>
     </v-container>
   </div>
