@@ -120,7 +120,7 @@ export default {
   methods: {
     getPca() {
         api
-        .get('http://localhost:5000/dashboard')
+        .get('/dashboard')
         .then((response)=>{
             
             this.series = [{

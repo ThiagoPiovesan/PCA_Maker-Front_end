@@ -106,7 +106,7 @@ export default {
       let formData = new FormData();
       formData.append('file', this.files);
 
-      axios.post('http://localhost:5000/save_file', formData, {
+      axios.post('https://sparta-back-end.herokuapp.com/save_file', formData, {
         headers: { 
           'Content-Type': 'multipart/form-data' 
         },

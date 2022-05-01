@@ -53,7 +53,6 @@
 <script>
 import { faChartArea } from '@fortawesome/free-solid-svg-icons'
 import { faDesktop } from '@fortawesome/free-solid-svg-icons'
-import { mapGetters } from 'vuex';
 import { faCog } from '@fortawesome/free-solid-svg-icons'
 
 export default {
@@ -77,16 +76,6 @@ export default {
             ],
             right: null,
             drawer: null,
-        }
-    },
-    computed: {
-        ...mapGetters(['getInferences', 'getSelectedInference']),
-        hasData: function () {
-            if(this.getInferences === null) {
-                console.log('entrou')
-                return true
-            } 
-            else return false
         }
     },
     methods:{
