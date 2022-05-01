@@ -20,6 +20,9 @@
               <div class="headline mt-3"># How does it work?</div>
               <p class="steps">→ You can simply Upload your file on this web application and it will procress the file and get you back the response of that data after the PCA.<br></p>
               <p class="steps">→ To get it start, just click on "Sparta" on top-left, after that click on "Upload your file here!" select your file and click on "Upload" button.<br></p>
+              <p class="steps">→ After that, you will see the response of the PCA and the infos about the data.<br></p>
+
+              <p class="steps">→ If you don't have a dataset to use, one can be download at: <a href="https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data">Example Dataset</a><br></p>  
             </v-flex>
             <br><hr>       
 
@@ -59,6 +62,15 @@
               </p>
             <br><hr>       
             </v-flex>
+            <v-flex>
+              <div class="headline mt-3"># Concepts and Languages used:</div>
+              <p class="steps">
+                - VUE.js;
+                - Flask API;
+                - Python;
+                - Vercel (Front-end) - https://vercel.com/;
+                - Heroku (Back-end) - https://www.heroku.com/.
+              </p>
         </v-layout>
     </v-container>
   </div>
