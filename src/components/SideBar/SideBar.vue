@@ -14,7 +14,7 @@
         <v-navigation-drawer app dark mobile-breakpoint="1264" v-model="drawer" class="sideBar" fixed>
             <v-list-item color="lime lighten-3" class="logo" @click="changeRoute">
                 <v-list-item-content>
-                    <v-list-item-title class="text-h9">
+                    <v-list-item-title class="textt">
                         Sparta
                     </v-list-item-title>
                 </v-list-item-content>
@@ -33,11 +33,11 @@
                 
                 >
                     <v-list-item-icon>
-                        <v-icon color="#7965C0">{{ item.icon }}</v-icon>
+                        <v-icon color="#8965C0">{{ item.icon }}</v-icon>
                     </v-list-item-icon>
 
-                    <v-list-item-content>
-                        <v-list-item-title font-size="30px">{{ item.title }}</v-list-item-title>
+                    <v-list-item-content class="icons">
+                        <v-list-item-title>{{ item.title }}</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
             </v-list>

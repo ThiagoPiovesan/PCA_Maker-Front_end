@@ -95,10 +95,14 @@ export default {
      */
     submitFile() {
       if (this.files == null) {
+        this.$vToastify.warning("Please select a file to upload!");
+        return;
+      }
+      if ((this.files.name.split('.').pop() != "csv") && (this.files.name.split('.').pop() != "xlsx") && (this.files.name.split('.').pop() != "data")) {
+        this.$vToastify.warning("Please select a valid file format to upload! [.csv, .xlsx, .data]");
         return;
       }
 
-      console.log("Submitting file for upload...");
       let formData = new FormData();
       formData.append('file', this.files);
 
@@ -108,15 +112,16 @@ export default {
         },
         timeout: 5000
       })
-        .then(response => {
-          console.log("File upload successful!");
-          console.log(response);
-          this.$router.push('/dashboard');
-          
-        }).catch(error => {
-          console.log("File upload failed.");
-          console.error(error);
-        });
+      .then((response) => {
+        console.log(response.data)
+        console.log("File upload successful!")
+        this.$router.push('/dashboard');
+        
+      })
+      .catch((error) => {
+        console.log("File upload failed.");
+        console.error(error);
+      });
     }
   }
 }

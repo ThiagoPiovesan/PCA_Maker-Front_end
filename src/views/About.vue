@@ -9,24 +9,26 @@
 # Libs importation:
 -->
 <template>
-  <div>
-        <h3> {{message}} </h3>
+  <div class="main">
     <layout/>
+    <about/>
   </div>
 </template>
 
 <script>
 import layout from "./Layout.vue"
+import about from "../components/About/About.vue"
 import axios from 'axios';
 
 export default {
-  name: 'homepage',
+  name: 'About',
   components:{
     layout,
+    about
   },
   data () {
     return {
-      message: "mensagem"
+      message: ""
     }
   },
   methods: {
@@ -34,7 +36,7 @@ export default {
       const path = 'http://localhost:5000/about';
       axios.get(path)
         .then((res) => {
-          this.message = res.data.message;
+          this.message = res.data;
         })
         .catch((error) => {
           // eslint-disable-next-line

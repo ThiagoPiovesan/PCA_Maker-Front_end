@@ -12,7 +12,7 @@
 <v-container>
   <v-app-bar app absolute dense dark>
     <v-spacer class="d-lg-none"></v-spacer>
-    <v-subheader>Sparta Project - PCA Maker</v-subheader>
+    <v-subheader font-size="30px">Sparta Project - PCA Maker</v-subheader>
     <v-spacer/>
     <v-btn
         text
