@@ -68,8 +68,8 @@
                 - VUE.js; <br>
                 - Flask API; <br>
                 - Python; <br>
-                - Vercel (Front-end) - https://vercel.com/; <br>
-                - Heroku (Back-end) - https://www.heroku.com/. <br>
+                - Vercel (Front-end) - <a href="https://vercel.com/">Vercel</a>; <br>
+                - Heroku (Back-end) - <a href="https://www.heroku.com/">Heroku</a>. <br>
               </p>
         </v-layout>
     </v-container>
