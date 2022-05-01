@@ -65,11 +65,11 @@
             <v-flex>
               <div class="headline mt-3"># Concepts and Languages used:</div>
               <p class="steps">
-                - VUE.js;
-                - Flask API;
-                - Python;
-                - Vercel (Front-end) - https://vercel.com/;
-                - Heroku (Back-end) - https://www.heroku.com/.
+                - VUE.js; <br>
+                - Flask API; <br>
+                - Python; <br>
+                - Vercel (Front-end) - https://vercel.com/; <br>
+                - Heroku (Back-end) - https://www.heroku.com/. <br>
               </p>
         </v-layout>
     </v-container>
